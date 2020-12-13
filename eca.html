@@ -1,0 +1,108 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>achievements</title>
+<style>
+	.collapsible {
+	  background-color:indianred;
+	  color: white;
+	  cursor: pointer;
+	  padding: 18px;
+	  width: 100%;
+	  border: none;
+	  text-align: left;
+	  outline: none;
+	  font-size: 15px;
+	}
+	
+	.active, .collapsible:hover {
+	  background-color: #555;
+	}
+	
+	.collapsible:after {
+	  content: '\002B';
+	  color: white;
+	  font-weight: bold;
+	  float: right;
+	  margin-left: 5px;
+	}
+	
+	.active:after {
+	  content: "\2212";
+	}
+	
+	.content {
+	  padding: 0 18px;
+	  max-height: 0;
+	  overflow: hidden;
+	  transition: max-height 0.2s ease-out;
+	  background-color: #f1f1f1;
+	}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<!--The images come from https://www.instagram.com/shcces_hpt/ and https://www.google.com/search?q=deutsch+sticker&safe=active&sa=X&hl=zh-TW&sxsrf=ALeKk01q6OUkAqvL-XHrSB0b5x3_WtqoAQ:1607853173253&tbm=isch&source=iu&ictx=1&fir=GwS72aTZPiQ7IM%252CDLnGfV-qq98_sM%252C_&vet=1&usg=AI4_-kQR55a8ykW24Tcw65dhti6xgNj3zw&ved=2ahUKEwiBmvjp18rtAhWdy4sBHYRABWsQ9QF6BAgPEAE&biw=1024&bih=657#imgrc=GwS72aTZPiQ7IM-->
+	<header>
+		<h1>Loey Lou In Mio</h1>
+		<h4>Practice makes perfect.</h4>
+	</header>
+	<nav>
+		<a href="aboutme.html">About Me</a> 
+		<a href="education.html">Education</a> 
+		<a href="eca.html">Extracurricular Activities </a>
+		<a href="certifications.html">Certifications and Awards</a> 
+		<a href="contact.html">Contact</a>
+	</nav>
+	<aside>
+	<img src="1.JPG" style="height:510px; width: auto;">
+    </aside>
+	<article>
+		<p style="font-size: large; font-style: italic;">ECA 1</p>
+		<button class="collapsible">Health Promating Team</button>
+<div class="content">
+	<img src="22.png" style="padding-left: 300px; height:180px;width: auto;">
+  <p><b>Introduction: </b>The Health Promoting Team is a team which is leaded by our school health care coordinator and is formed by a group of students who are enthusiastic in promoting health. In this team, students can learn the basic knowledge of first aid and how to live a healthy lifestyle. Moreover, they can put what they have learned into practice by doing some duty work in the clinic, or on some special occasion events (e.g., sports day).</p>
+<p><b>My role: </b>Member</p>
+<p><b>My responsibility: </b>I attend the meeting punctually and do my best to learn the first aids that the club has taught me.</p>
+</div>
+<br>
+<p style="font-size: large; font-style: italic;">ECA 2</p>
+<button class="collapsible">German Class</button>
+<div class="content">
+	<img src="1.png" style="padding-left: 300px; height:180px;width: auto;">
+  <p><b>Introduction: </b>This course is designed for beginners who are interested in learning German. It is mainly based on practical and natural situations, supplemented by grammar. It also introduces German culture, so that students can expand their international vision while learning the language. Student will learn from the alphabet and pronunciation rules first, follow by some basic sentence patterns, life conversations and tense changes. In addition to lecture notes, multimedia teaching materials are also supplemented. It is expected that by the end of the course, students will be able to conduct daily conversations in German, such as describing events, ordering meals, shopping, etc.</p>
+<p><b>My role: </b>Member</p>
+<p><b>My responsibility: </b>I attend the meeting punctually and learn the German taught by the teacher in class.</p>
+</div>
+<script>
+	var coll = document.getElementsByClassName("collapsible");
+	var i;
+	
+	for (i = 0; i < coll.length; i++) {
+	  coll[i].addEventListener("click", function() {
+		this.classList.toggle("active");
+		var content = this.nextElementSibling;
+		if (content.style.maxHeight){
+		  content.style.maxHeight = null;
+		} else {
+		  content.style.maxHeight = content.scrollHeight + "px";
+		} 
+	  });
+	}
+	</script>
+	
+	</article>
+	<footer>Copyright &#169; 2020 Loey Lou
+		<br>
+		<a href="https://www.facebook.com/lou.loey.12" target="_blank" style="background-color: #4F4846; color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+	<path fill-rule="evenodd" d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+  </svg></a>
+  <a href="https://www.instagram.com/loeylou123/" target="_blank" style="background-color:#4F4846 ;color: white;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+	<path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+  </svg></a>
+	</footer>
+</body>
+</html>
